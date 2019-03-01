@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>"Mate academy" | Тестовое задание</title>
+		<meta name="description" content='Mate academy". Тестовое задание'>
+		<meta name="keywords" content='Mate academy", Тестовое задание, Курсы, Работа'>
+		<!-- Favicon -->
+		<link rel="icon" href="img/favicon.png" type="image/x-icon">
+	 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+		<!-- OG Tags -->
+		<meta property="og:title" content='Mate academy". Тестовое задание'>
+		<meta property="og:description" content='Mate academy", Тестовое задание, Курсы, Работа'>
+		<meta property="og:type" content="article">
+		<meta property="og:image" content="https://вставить ссылку на картинку из хостинга" >
+		<meta property="og:site_name" content='Тестовое задание'>
+
+		<link href="css/jquery-ui.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/media.css">
+	</head>
+	<body>
+		<header class="header" id="header">
+			<div class="container d-flex">
+				<div class="header-content-left">
+					<h1 class="header-content__title">
+						Тестовое задание
+					</h1>
+					<p class="header-content__subtitle">
+						(Тимофей Окороков)
+					</p>
+				</div>
+				<div class="header-content-right d-flex">
+					<a class="header-content-right__tel" href="tel:+380977970751">
+						<span>+38 (097) 797-07-51</span>
+					</a>
+					<a class="header-content-right__mail" href="mailto:timaokorokov@gmail.com?subject=Консультация">
+						<span>timaokorokov@gmail.com</span>
+					</a>
+				</div>
+			</div>
+		</header>
+		<section class="content" id="content">
+			<div class="container">
+				<div class="form">
+					<div class="first">
+						<input class="name" type=text placeholder="First name">
+					</div>
+
+					<div class="last">
+						<input class="surname" type="text" placeholder="Last name">
+					</div>
+
+					<div class="birt">
+						<script src="js/jquery-1.12.4.js"></script>
+					  	<script src="js/jquery-ui.js"></script>
+					  	<script src="js/jquery-ui-i18n.js"></script>
+						<script>
+						    $( function() {
+						        $( "#datepicker" ).datepicker({
+						            showOn: "button",
+						            buttonImage: "img/calendar.gif",
+						            buttonImageOnly: true,
+						            buttonText: "Select date"
+						        });
+						        $.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
+						    });
+						</script>
+						<div>
+							<input class="date" type="text" id="datepicker" placeholder="Дата рождения">
+						</div>
+					</div>
+
+					<div class="gender">
+						<p><i>Вибирете Ваш пол:</i></p>
+					    <div>
+					        <input class="male" type="radio" name="radio" value="1">
+					        Мужчина
+					    </div>
+					    <div>
+					        <input class="female" type="radio" name="radio" value="2" >
+					        Женщина
+					    </div>
+					</div>
+
+					<div class="country">
+			       		<select class="select" placeholder="Выберите страну">
+			       			<option value="">Выбирите страну</option>
+			       			<option value="США">США</option>
+			       			<option value="Германия">Германия</option>
+			       			<option value="Украина">Украина</option>
+			       			<option value="Индия">Индия</option>
+			       			<option value="Португалия">Португалия</option>
+			   			</select>
+					</div>
+
+					<div class="in-email">
+						<input class="email" type="email" placeholder="E-mail">
+					</div>
+
+					<div class="in-password">
+						<input class="password" type="password" placeholder="Пароль">
+					</div>
+
+					<div class="in-adres">
+						<input class="adres" type="text" placeholder="Адресс">
+					</div>
+
+					<div>
+						<textarea class="area" placeholder="Введите Ваше сообщение"></textarea>
+					</div>
+					
+
+					<button id="button" type='submit'>Submit</button>
+				</div>
+			</div>
+		</section>
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer-content">
+					<p>
+						Чуть не умер, пока сверстал :)&#62;
+					</p>
+					<p>
+						Без ошибок ни как не обошлось, но именно по этому я и хочу учится именно у Вас!
+					</p>
+					<p>
+						С уважением, Тимофей.
+					</p>
+				</div>
+			</div>
+		</footer>
+		<script src="js/main.js" type="text/javascript"></script>
+	</body>
+</html>
